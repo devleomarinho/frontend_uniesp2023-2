@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Aula sobre forms etc</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Formulário</h1>
+    <form autocomplete="on" method="get">
+      <label for="name">Nome: </label>
+      <input type="text" placeholder="Nome completo" id="nome" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+      
+      <label for="cidade">Cidade: </label>
+      <select name="cidade" id="cidade">
+        <option value=" "></option>
+        <option value="João Pessoa">João Pessoa</option>
+        <option value="Cabedelo">Cabedelo</option>
+        <option value="Campina Grande">Campina Grande</option>
+        <option value="Conde">Conde</option>
+      </select>
+      
+      <label for="datetime">Data de nascimento: </label>
+      <input type="datetime-local" name="datatempo" id="datatempo">
+      
+      <label for="mensagem">Mensagem:</label>
+      <textarea name="mensagem" style="height: 150px ;"></textarea>
+      <br>
+     <input type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+
+</html>
